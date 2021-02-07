@@ -1,0 +1,39 @@
+In the RandomClue class I tried to run the program 3 times for each choice and got the following results
+For choice 1
+	Fail 55 loops.
+	Fail 703 loops.
+	Fail 365 loops.
+
+For choice 2
+	Fail 170 loops.
+	Fail 109 loops.
+	Fail 371 loops.
+
+For choice 3
+	Fail 690 loops.
+	Fail 1335 loops. (Yikes)
+	Fail 838 loops.
+
+In the StrategicClue class I kept the code mostly the same and just added a loop that checks adjust the value inside the do while loop
+For choice 1
+	Pass 1 loop. It's always 1 because the values are preset to start with 1 
+
+For choice 2
+	Pass 20 loops.
+	Pass 20 loops.
+	Pass 20 loops.
+
+For choice 3
+	Pass 14 loops.
+	Pass 10 loops.
+	Pass 13 loops.
+
+During the RandomClue checks most of the answers were well within the hundreds of trys before being successful, getting really wild for choice 3
+There isn't much good about this approach because it's always tackling the problem with random solutions so getting one right is
+very unreliable. When the goal is to find the killer as fast as possible I don't think you'll want it to take hundreds of guesses before being right.
+
+Using the other approach in the StrategicClue class, simply putting another loop in the while loop, it's able to quickly identify what the 
+problem is and is able to guess in 20 trys or under. This approach is much more accurate and predictable even if it still is being selected
+at random. Every attempt is a pass in this class vs 99% being wrong in the random class.
+
+
